@@ -22,3 +22,15 @@ Content-Type: application/json
 {
     "subscribedToChannel": "Running"
 }
+
+###
+POST http://test-01.app.ruk-com.cloud/subscribers
+Content-Type: application/json
+
+{
+    "name": "Fred Flinstone",
+    "subscribedToChannel": "Bowling"
+}
+
+###
+Get http://test-01.app.ruk-com.cloud/subscribers
