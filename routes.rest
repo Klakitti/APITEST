@@ -1,0 +1,24 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/623ad0cbc057c35d78df978c
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Klakitti Kongkul",
+    "subscribedToChannel": "Travel"
+}
+
+###
+DELETE  http://localhost:3000/subscribers/623ad109c057c35d78df978e
+
+###
+PATCH http://localhost:3000/subscribers/623ad0cbc057c35d78df978c
+Content-Type: application/json
+
+{
+    "subscribedToChannel": "Running"
+}
